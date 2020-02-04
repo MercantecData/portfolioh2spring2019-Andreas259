@@ -22,6 +22,9 @@ namespace Overloading
 
             // Square Root
             Console.WriteLine("Square root of 5 = " + mathObject.SquareRoot(5d));
+
+            // Exponentiation
+            Console.WriteLine("Exponentiation of 5 base and 3 exponent = " + mathObject.Exponentiation(5, 3));
         }
     }
 
@@ -122,18 +125,29 @@ namespace Overloading
             if (num > 0)
             {
                 double root = num / 3;
-                int i;
                 
-                for(i = 0; i < 32; i++)
+                for(int i = 0; i < 32; i++)
                 {
                     root = (root + num / root) / 2;
                 }
+
                 return root;
             } 
             else
             {
                 return 0;
             }
+        }
+
+        public int Exponentiation(int num, int exponent)
+        {
+
+            for (int i = exponent; i > 1; i--)
+            {
+                num *= num;
+            }
+
+            return num;
         }
     }
 }
