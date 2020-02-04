@@ -1,1 +1,3 @@
-portfolioh2spring2019-Andreas259
+Tasks completed:
+
+Dictionaries: 1, 2 & 3
