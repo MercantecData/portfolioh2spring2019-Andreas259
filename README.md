@@ -1,4 +1,5 @@
 Tasks completed:
 
 Dictionaries<br/>
-Overloading
+Overloading<br/>
+Delegates | Bonus is still in progress
