@@ -2,4 +2,5 @@ Tasks completed:
 
 Dictionaries<br/>
 Overloading<br/>
-Delegates
+Delegates<br/>
+Lambda Expressions
