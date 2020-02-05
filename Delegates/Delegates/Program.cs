@@ -4,22 +4,32 @@ namespace Delegates
 {
     class Program
     {
-        public delegate void method1Delegate();
-        public delegate float method2Delegate();
-        public delegate void method3Delegate(string name, int age, float height);
+        public delegate void Method1Delegate();
+        public delegate float Method2Delegate();
+        public delegate void Method3Delegate(string name, int age, float height);
+        public delegate int MathDelegate(int num1, int num2);
         static void Main(string[] args)
         {
-            // Point delegate1 to Method1
-            method1Delegate delegate1 = Method1;
+            // Assign type Method1Delegate to variable delegate1 and point it to Method1.
+            Method1Delegate delegate1 = Method1;
             delegate1();
 
-            // Point delegate2 to Method2
-            method2Delegate delegate2 = Method2;
+            // Assign type Method2Delegate to variable delegate2 and point it to Method2.
+            Method2Delegate delegate2 = Method2;
             Console.WriteLine("Method 2 float value " + delegate2());
 
-            // Point delegate3 to Method3
-            method3Delegate delegate3 = Method3;
+            // Assign type Method3Delegate to variable delegate3 and point it to Method3.
+            Method3Delegate delegate3 = Method3;
             delegate3("Andreas", 25, 1.82f);
+
+            // Create a new instance of Math class.
+            Math mathObject = new Math();
+            // Assign type MathDelegate to variable math and point it to Addition method in Math class.
+            MathDelegate math = mathObject.Addition;
+            Console.WriteLine("Addition 17 + 18 = " + math(17, 18));
+            // Assign math variable to Multiplication method in Math class.
+            math = mathObject.Multiplication;
+            Console.WriteLine("Multiplication 3 * 7 = " + math(3, 7));
         }
         public static void Method1()
         {
