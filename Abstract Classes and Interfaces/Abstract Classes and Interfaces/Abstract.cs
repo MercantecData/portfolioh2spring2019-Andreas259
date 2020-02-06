@@ -9,6 +9,11 @@ namespace AbstractClassesAndInterfaces
     {
         // Set abstract method.
         public abstract void Start();
+
+        public void HelloWorld()
+        {
+            Console.WriteLine("HelloWorld!");
+        }
     }
 
     public class SubClass1 : Abstract

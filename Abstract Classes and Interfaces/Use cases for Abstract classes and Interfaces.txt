@@ -1,0 +1,14 @@
+Abstract Classes:
+
+1) Kan anvendes i stedet for en alm. class hvis man ikke må lave en ny instance af den. 
+2) Abstract metoder kan kun oprettes i en abstract class.
+3) Hvis man vil bruge en abstract class så skal den nedarves, f.eks. ClassName : AbstractClass
+4) Hvis du bruger en abstract metode så skal der være en metode med samme navn i subclass som override den.
+5) I abstract class kan der være properties/variabler og metoder der ikke er abstract.
+
+Interfaces:
+
+1) Interfaces navngives med stort "i", f.eks. IMyInterface
+2) En class kan anvende flere interfaces, f.eks. ClassName : IMyInterface1, IMyInterface2
+3) Interfaces kan ikke indeholde properties/variabler eller metoeder.
+4) Et interface definerer hvilke metoder der skal være i en class.
