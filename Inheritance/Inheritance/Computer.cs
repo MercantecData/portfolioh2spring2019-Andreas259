@@ -22,13 +22,13 @@ namespace Inheritance
         {
             if (!poweredOn)
             {
-                Console.WriteLine("Computer of manufacturer " + manufacturer + " is powered on");
+                Console.WriteLine("Device of manufacturer " + manufacturer + " is powered on");
                 poweredOn = true;
                 motherboard.Boot();
             }
             else
             {
-                Console.WriteLine("Computer of manufacturer " + manufacturer + " is powered off");
+                Console.WriteLine("Device of manufacturer " + manufacturer + " is powered off");
                 poweredOn = false;
             }
         }
