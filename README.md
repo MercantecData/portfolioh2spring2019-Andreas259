@@ -1,5 +1,6 @@
 Tasks in progress:
-Summary Week 1<br/>
+
+Summary Week 1
 
 Tasks completed:
 
