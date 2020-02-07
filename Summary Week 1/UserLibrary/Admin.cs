@@ -4,7 +4,7 @@ using System.Text;
 
 namespace UserLibrary
 {
-    class Admin : User
+    public class Admin : User
     {
         public Admin(string login, string password, Job job) : base(login, password, job)
         {

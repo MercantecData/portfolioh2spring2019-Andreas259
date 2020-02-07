@@ -4,7 +4,7 @@ using System.Text;
 
 namespace UserLibrary
 {
-    class DailyPaidJob : Job
+    public class DailyPaidJob : Job
     {
         public int DailyPay { get; set; }
 

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace UserLibrary
 {
-    class User
+    public class User
     {
         public string Login { get; private set; }
         string password;

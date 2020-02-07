@@ -1,4 +1,5 @@
 ﻿using System;
+using UserLibrary;
 
 namespace ConsoleApp
 {
@@ -6,7 +7,8 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Registry registry1 = new Registry();
+            registry1.AddNewUser(new User("andreas", "abcd1234", new HourlyPaidJob(172)));
         }
     }
 }

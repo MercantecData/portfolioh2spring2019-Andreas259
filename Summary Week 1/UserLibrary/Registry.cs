@@ -4,7 +4,7 @@ using System.Text;
 
 namespace UserLibrary
 {
-    class Registry
+    public class Registry
     {
         List<User> users = new List<User>();
         List<Admin> admins = new List<Admin>();
