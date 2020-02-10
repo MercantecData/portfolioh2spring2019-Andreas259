@@ -32,6 +32,7 @@ namespace UserLibrary
                     {
                         if (admin.Login == login && admin.Password == password)
                         {
+                            Console.WriteLine("User {0} has been signed in", admin.Login);
                             return true;
                         }
                     }
@@ -40,6 +41,7 @@ namespace UserLibrary
                 {
                     if (user.Login == login && user.Password == password)
                     {
+                        Console.WriteLine("User {0} has been signed in", user.Login);
                         return true;
                     }
                 }

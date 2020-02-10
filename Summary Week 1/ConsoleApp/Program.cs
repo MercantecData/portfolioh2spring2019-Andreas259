@@ -9,6 +9,7 @@ namespace ConsoleApp
         {
             Registry registry1 = new Registry();
             registry1.AddNewUser(new User("andreas", "abcd1234", new HourlyPaidJob(172)));
+            registry1.Login("andreas", "abcd1234");
         }
     }
 }
