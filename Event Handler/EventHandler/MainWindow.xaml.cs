@@ -23,6 +23,7 @@ namespace EventHandler
         public MainWindow()
         {
             InitializeComponent();
+            button.Click += (s, e) => MessageBox.Show("Hello!");
         }
     }
 }
